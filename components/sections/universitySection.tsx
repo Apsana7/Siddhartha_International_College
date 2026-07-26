@@ -27,8 +27,8 @@ export function UniversitySection() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-linear-to-br from-slate-50 via-white to-blue-50/40">
-      <div className="w-11/12  mx-auto">
+    <section className="w-11/12 py-16 md:py-24 bg-linear-to-br from-slate-50 via-white to-blue-50/40">
+      <div className="w-full  mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 space-y-6">
             <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 text-xs font-semibold px-3 py-1 rounded-full border border-orange-200/50">
@@ -91,7 +91,7 @@ export function UniversitySection() {
                 className="w-full h-[70vh] object-cover"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-amber-400/10" />
+              <div className="absolute inset-0 bg-linear-to-br from-blue-600/10 via-transparent to-amber-400/10" />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg border border-white/20">
                 <p className="text-xs font-semibold text-gray-800 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
