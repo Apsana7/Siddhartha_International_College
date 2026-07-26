@@ -213,7 +213,7 @@ export default async function BlogDetailPage({
       </section>
 
       {/* Breadcrumb */}
-      <nav className="w-11/12 mx-auto py-4  text-sm text-gray-500 dark:text-gray-400 bg-white">
+      <nav className="w-11/12 mx-auto py-4  text-sm text-gray-500  bg-white">
       <div className="mb-4">
         <Link href='/blogs' className="text-orange-600 underline underline-offset-2">Back to blogs</Link>
       </div>
@@ -226,7 +226,7 @@ export default async function BlogDetailPage({
             <Link href="/blogs" className="hover:text-blue-600">Blogs</Link>
           </li>
           <li>/</li>
-          <li className="text-gray-700 dark:text-gray-300 font-medium truncate">
+          <li className="text-gray-700  font-medium truncate">
             {blog.title}
           </li>
         </ol>
@@ -236,7 +236,7 @@ export default async function BlogDetailPage({
       <section className="w-10/12 mx-auto py-8 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
-            <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8 prose prose-lg max-w-none">
+            <article className="bg-white rounded-2xl shadow-lg p-6 md:p-8 prose prose-lg max-w-none">
               <div className="flex items-center gap-4 mb-6 border-b border-gray-100 pb-4">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
                   <Image
@@ -247,24 +247,24 @@ export default async function BlogDetailPage({
                   />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 dark:text-white">{blog.author}</p>
+                  <p className="font-semibold text-gray-800 ">{blog.author}</p>
                   <p className="text-sm text-gray-500">{blog.date}</p>
                 </div>
-                <span className="ml-auto bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-xs font-semibold">
+                <span className="ml-auto bg-blue-100  text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">
                   {blog.category}
                 </span>
               </div>
               <div
                 dangerouslySetInnerHTML={{ __html: blog.content || blog.description }}
-                className="text-gray-700 dark:text-gray-300 leading-relaxed"
+                className="text-gray-700  leading-relaxed"
               />
             </article>
           </div>
 
           <div className="space-y-6">
             {blog.authorBio && (
-              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
-                <h4 className="text-lg font-bold text-gray-800 dark:text-white mb-3">
+              <div className="bg-white  rounded-2xl shadow-lg p-6">
+                <h4 className="text-lg font-bold text-gray-800  mb-3">
                   About the Author
                 </h4>
                 <div className="flex items-center gap-3">
@@ -277,7 +277,7 @@ export default async function BlogDetailPage({
                     />
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800 dark:text-white">{blog.author}</p>
+                    <p className="font-semibold text-gray-800 ">{blog.author}</p>
                     <p className="text-sm text-gray-500">{blog.authorBio}</p>
                   </div>
                 </div>
@@ -285,8 +285,8 @@ export default async function BlogDetailPage({
             )}
 
             {relatedBlogs.length > 0 && (
-              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
-                <h4 className="text-lg font-bold text-gray-800 dark:text-white mb-4">
+              <div className="bg-white  rounded-2xl shadow-lg p-6">
+                <h4 className="text-lg font-bold text-gray-800  mb-4">
                   Related Posts
                 </h4>
                 <ul className="space-y-4">
@@ -294,9 +294,9 @@ export default async function BlogDetailPage({
                     <li key={rel.id}>
                       <Link
                         href={`/blogs/${rel.id}`}
-                        className="flex items-center space-x-3 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded-lg transition"
+                        className="flex items-center space-x-3 hover:bg-gray-50  p-2 rounded-lg transition"
                       >
-                        <div className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-gray-200 dark:bg-gray-700">
+                        <div className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-gray-200 ">
                           <Image
                             src={rel.image}
                             alt={rel.title}
@@ -306,10 +306,10 @@ export default async function BlogDetailPage({
                           />
                         </div>
                         <div>
-                          <p className="text-sm font-medium text-gray-800 dark:text-white line-clamp-2">
+                          <p className="text-sm font-medium text-gray-800  line-clamp-2">
                             {rel.title}
                           </p>
-                          <p className="text-xs text-gray-500 dark:text-gray-400">
+                          <p className="text-xs text-gray-500 ">
                             {rel.date}
                           </p>
                         </div>

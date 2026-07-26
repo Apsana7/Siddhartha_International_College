@@ -159,7 +159,7 @@ export default async function EventDetailPage({
         </div>
       </section>
 
-      <nav className="w-11/12 mx-auto py-4 px-4 text-sm text-gray-500 dark:text-gray-400">
+      <nav className="w-11/12 mx-auto py-4 px-4 text-sm text-gray-500 ">
       <div className="text-orange-500 underline underline-offset-2 mb-6 flex gap-2 items-center">
         <ArrowLeft className="h-4 w-4 "/>
         <Link href='/events'>Back to all events</Link>
@@ -173,7 +173,7 @@ export default async function EventDetailPage({
             <Link href="/events" className="hover:text-blue-600">Events</Link>
           </li>
           <li>/</li>
-          <li className="text-gray-700 dark:text-gray-300 font-medium truncate">
+          <li className="text-gray-700 font-medium truncate">
             {event.title}
           </li>
         </ol>
@@ -182,35 +182,35 @@ export default async function EventDetailPage({
       <section className="w-10/12 mx-auto py-8 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+              <h2 className="text-2xl font-bold text-gray-800  mb-4">
                 About This Event
               </h2>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 {event.fullDescription || event.description}
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
-              <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-4 text-center flex flex-col gap-2">
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">Date</p>
-                <p className="text-xs text-gray-600 dark:text-gray-300">{event.date}</p>
+              <div className="bg-blue-50  rounded-xl p-4 text-center flex flex-col gap-2">
+                <p className="text-sm font-semibold text-gray-700 ">Date</p>
+                <p className="text-xs text-gray-600 ">{event.date}</p>
               </div>
-              <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-4 text-center flex flex-col gap-2">
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">Location</p>
-                <p className="text-xs text-gray-600 dark:text-gray-300">{event.location}</p>
+              <div className="bg-green-50  rounded-xl p-4 text-center flex flex-col gap-2">
+                <p className="text-sm font-semibold text-gray-700 ">Location</p>
+                <p className="text-xs text-gray-600 ">{event.location}</p>
               </div>
-              <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-xl p-4 text-center flex flex-col gap-2">
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">Time</p>
-                <p className="text-xs text-gray-600 dark:text-gray-300">{event.time}</p>
+              <div className="bg-yellow-50 rounded-xl p-4 text-center flex flex-col gap-2">
+                <p className="text-sm font-semibold text-gray-700 ">Time</p>
+                <p className="text-xs text-gray-600 ">{event.time}</p>
               </div>
-              <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-4 text-center flex flex-col gap-2">
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">Organizer</p>
-                <p className="text-xs text-gray-600 dark:text-gray-300">{event.organizer || "TBA"}</p>
+              <div className="bg-purple-50  rounded-xl p-4 text-center flex flex-col gap-2">
+                <p className="text-sm font-semibold text-gray-700 ">Organizer</p>
+                <p className="text-xs text-gray-600 ">{event.organizer || "TBA"}</p>
               </div>
-              <div className="bg-red-50 dark:bg-red-900/20 rounded-xl p-4 text-center col-span-2 flex flex-col gap-2">
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">Price</p>
-                <p className="text-xs text-gray-600 dark:text-gray-300">{event.price || "Free"}</p>
+              <div className="bg-red-50  rounded-xl p-4 text-center col-span-2 flex flex-col gap-2">
+                <p className="text-sm font-semibold text-gray-700 ">Price</p>
+                <p className="text-xs text-gray-600 ">{event.price || "Free"}</p>
               </div>
             </div>
           </div>
@@ -218,8 +218,8 @@ export default async function EventDetailPage({
           <div className="space-y-6">
           
             {relatedEvents.length > 0 && (
-              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
-                <h4 className="text-lg font-bold text-gray-800 dark:text-white mb-4">
+              <div className="bg-white rounded-2xl shadow-lg p-6">
+                <h4 className="text-lg font-bold text-gray-800  mb-4">
                   Other Events
                 </h4>
                 <ul className="space-y-4">
@@ -227,9 +227,9 @@ export default async function EventDetailPage({
                     <li key={rel.id}>
                       <Link
                         href={`/events/${rel.id}`}
-                        className="flex items-center space-x-3 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded-lg transition"
+                        className="flex items-center space-x-3 hover:bg-gray-50  p-2 rounded-lg transition"
                       >
-                        <div className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-gray-200 dark:bg-gray-700">
+                        <div className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-gray-200 ">
                           <Image
                             src={rel.image}
                             alt={rel.title}
@@ -239,10 +239,10 @@ export default async function EventDetailPage({
                           />
                         </div>
                         <div>
-                          <p className="text-sm font-medium text-gray-800 dark:text-white">
+                          <p className="text-sm font-medium text-gray-800 ">
                             {rel.title}
                           </p>
-                          <p className="text-xs text-gray-500 dark:text-gray-400">
+                          <p className="text-xs text-gray-500 ">
                             {rel.date}
                           </p>
                         </div>

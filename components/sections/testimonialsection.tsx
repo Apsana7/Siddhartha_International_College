@@ -76,7 +76,7 @@ const settings = {
 export function TestimonialsSection() {
     return (
         <section className="py-16 md:py-24 bg-gray-50">
-            <div className="w-11/12 max-w-7xl mx-auto">
+            <div className="w-11/12  mx-auto">
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 text-xs font-semibold px-4 py-1.5 rounded-full border border-orange-200/50 mb-3">
                         <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />

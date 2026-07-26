@@ -123,7 +123,7 @@ export default function CourseList() {
                 className={`px-4 py-1.5 text-sm font-medium rounded-lg  whitespace-nowrap transition duration-200 ${
                   selectedCategory === cat
                     ? "bg-blue-600 text-white shadow-md"
-                    : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+                    : "bg-gray-100  text-gray-700  hover:bg-gray-200 "
                 }`}
               >
                 {cat}
@@ -137,7 +137,7 @@ export default function CourseList() {
               placeholder="Search courses..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-2 pl-10 border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg bg-gray-50  text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <svg
               className="absolute left-3 top-2.5 w-4 h-4 text-gray-400"
@@ -160,7 +160,7 @@ export default function CourseList() {
       <section className="w-10/12 mx-auto py-12 px-4">
         {filteredCourses.length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-gray-500 dark:text-gray-400 text-lg">
+            <p className="text-gray-500  text-lg">
               No courses match your filters.
             </p>
           </div>
@@ -169,9 +169,9 @@ export default function CourseList() {
             {filteredCourses.map((course) => (
               <div
                 key={course.id}
-                className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+                className="group bg-white  rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
               >
-                <div className="relative h-48 w-full bg-gray-200 dark:bg-gray-700">
+                <div className="relative h-48 w-full bg-gray-200">
                   <Image
                     src={course.image}
                     alt={course.title}
@@ -184,19 +184,19 @@ export default function CourseList() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
                     {course.title}
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-300 text-sm leading-relaxed line-clamp-2">
+                  <p className="text-gray-500  text-sm leading-relaxed line-clamp-2">
                     {course.description}
                   </p>
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="text-xs font-medium text-gray-400 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full">
+                    <span className="text-xs font-medium text-gray-400  bg-gray-100 px-3 py-1 rounded-full">
                       🕒 {course.duration}
                     </span>
                     <Link
                       href={`/courses/${course.id}`}
-                      className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                      className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800  transition-colors"
                     >
                       Read More
                       <svg

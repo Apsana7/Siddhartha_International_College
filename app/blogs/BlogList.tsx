@@ -131,7 +131,7 @@ export default function BlogList() {
                 className={`px-4 py-1.5 text-sm font-medium rounded-lg whitespace-nowrap transition duration-200 ${
                   selectedCategory === cat
                     ? "bg-blue-600 text-white shadow-md"
-                    : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+                    : "bg-gray-100  text-gray-700  hover:bg-gray-200 "
                 }`}
               >
                 {cat}
@@ -145,7 +145,7 @@ export default function BlogList() {
               placeholder="Search blogs..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-2 pl-10 border border-gray-300 dark:border-gray-600 rounded-full bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 pl-10 border border-gray-300  rounded-full bg-gray-50  text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <svg
               className="absolute left-3 top-2.5 w-4 h-4 text-gray-400"
@@ -168,7 +168,7 @@ export default function BlogList() {
       <section className="w-10/12 mx-auto py-12 px-4">
         {filteredBlogs.length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-gray-500 dark:text-gray-400 text-lg">
+            <p className="text-gray-500  text-lg">
               No blogs match your filters.
             </p>
           </div>
@@ -177,10 +177,10 @@ export default function BlogList() {
             {filteredBlogs.map((blog) => (
               <div
                 key={blog.id}
-                className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 flex flex-col"
+                className="group bg-white  rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100  flex flex-col"
               >
                 {/* Image */}
-                <div className="relative h-52 w-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
+                <div className="relative h-52 w-full bg-gray-200  overflow-hidden">
                   <Image
                     src={blog.image}
                     alt={blog.title}
@@ -205,22 +205,22 @@ export default function BlogList() {
                         className="object-cover"
                       />
                     </div>
-                    <span className="text-sm text-gray-600 dark:text-gray-300">{blog.author}</span>
-                    <span className="text-xs text-gray-400 dark:text-gray-500 ml-auto">
+                    <span className="text-sm text-gray-600 ">{blog.author}</span>
+                    <span className="text-xs text-gray-400 ml-auto">
                       {blog.date}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
+                  <h3 className="text-xl font-bold text-gray-800  mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
                     {blog.title}
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-300 text-sm leading-relaxed line-clamp-3 flex-1">
+                  <p className="text-gray-500 text-sm leading-relaxed line-clamp-3 flex-1">
                     {blog.excerpt}
                   </p>
 
                   <Link
                     href={`/blogs/${blog.id}`}
-                    className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors self-start"
+                    className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800  transition-colors self-start"
                   >
                     Read More
                     <svg

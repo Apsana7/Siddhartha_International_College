@@ -174,7 +174,7 @@ export default function TeamList() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Filter Bar – like Courses page */}
-      <section className="sticky top-0 z-10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 shadow-sm">
+      <section className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-gray-200  shadow-sm">
         <div className="w-11/12 max-w-7xl mx-auto py-4 flex flex-wrap gap-2 items-center justify-center">
           {categories.map((cat) => (
             <button
@@ -183,7 +183,7 @@ export default function TeamList() {
               className={`px-4 py-1.5 text-sm font-medium rounded-lg cursor-pointer transition duration-200 ${
                 selectedCategory === cat
                   ? "bg-blue-600 text-white shadow-md"
-                  : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+                  : "bg-gray-100  text-gray-700  hover:bg-gray-200"
               }`}
             >
               {cat}

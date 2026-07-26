@@ -27,8 +27,8 @@ export function UniversitySection() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50/40">
-      <div className="w-11/12 max-w-7xl mx-auto">
+    <section className="py-16 md:py-24 bg-linear-to-br from-slate-50 via-white to-blue-50/40">
+      <div className="w-11/12  mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 space-y-6">
             <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 text-xs font-semibold px-3 py-1 rounded-full border border-orange-200/50">

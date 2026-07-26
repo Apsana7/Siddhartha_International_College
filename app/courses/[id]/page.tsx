@@ -290,7 +290,7 @@ export default async function CourseDetailPage({
       </section>
 
       {/* Breadcrumb */}
-      <nav className="w-11/12 mx-auto py-4  px-4 text-sm text-gray-500 dark:text-gray-400 bg-white">
+      <nav className="w-11/12 mx-auto py-4  px-4 text-sm text-gray-500  bg-white">
        <div className="mb-6 flex gap-1 items-center">
         <ArrowLeft className="text-orange-600 w-4 h-4"/>
             <Link href="/courses" className="text-orange-600 text-sm underline underline-offset-2">Back to courses</Link>
@@ -306,7 +306,7 @@ export default async function CourseDetailPage({
             <Link href="/courses" className="hover:text-blue-600">Courses</Link>
           </li>
           <li>/</li>
-          <li className="text-gray-700 dark:text-gray-300 font-medium truncate">
+          <li className="text-gray-700  font-medium truncate">
             {course.title}
           </li>
         </ol>
@@ -315,43 +315,39 @@ export default async function CourseDetailPage({
       <section className="w-10/12 mx-auto py-8 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+            <div className="bg-white  rounded-2xl shadow-lg p-6 md:p-8">
+              <h2 className="text-2xl font-bold text-gray-800  mb-4">
                 Course Overview
               </h2>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 {course.fullDescription || course.description}
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-4 text-center">
-                <div className="text-2xl mb-1">🎓</div>
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">Level</p>
-                <p className="text-sm text-gray-600 dark:text-gray-300">{course.level}</p>
+              <div className="bg-blue-50  rounded-xl p-4 text-center">
+                <p className="text-sm font-semibold text-gray-700 ">Level</p>
+                <p className="text-sm text-gray-600">{course.level}</p>
               </div>
-              <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-4 text-center">
-                <div className="text-2xl mb-1">⏳</div>
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">Duration</p>
-                <p className="text-sm text-gray-600 dark:text-gray-300">{course.duration}</p>
+              <div className="bg-green-50 rounded-xl p-4 text-center">
+                <p className="text-sm font-semibold text-gray-700 ">Duration</p>
+                <p className="text-sm text-gray-600">{course.duration}</p>
               </div>
-              <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-xl p-4 text-center">
-                <div className="text-2xl mb-1">👨‍🏫</div>
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">Instructor</p>
-                <p className="text-sm text-gray-600 dark:text-gray-300">{course.instructor}</p>
+              <div className="bg-yellow-50  rounded-xl p-4 text-center">
+                <p className="text-sm font-semibold text-gray-700">Instructor</p>
+                <p className="text-sm text-gray-600 ">{course.instructor}</p>
               </div>
-              <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-4 text-center">
-                <div className="text-2xl mb-1">📋</div>
-                <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">Prerequisites</p>
-                <p className="text-sm text-gray-600 dark:text-gray-300">{course.prerequisites}</p>
+              <div className="bg-purple-50  rounded-xl p-4 text-center">
+                <p className="text-sm font-semibold text-gray-700 ">Prerequisites</p>
+                <p className="text-sm text-gray-600 ">{course.prerequisites}</p>
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8">
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-4">
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+              <h3 className="text-xl font-bold text-gray-800  mb-4">
                  What You'll Learn
               </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <ul className="space-y-2 text-gray-600 ">
                 {course.learningOutcomes?.map((outcome, idx) => (
                   <li key={idx} className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
@@ -364,13 +360,13 @@ export default async function CourseDetailPage({
             </div>
 
             {/* Curriculum */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8">
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-4">
+            <div className="bg-white  rounded-2xl shadow-lg p-6 md:p-8">
+              <h3 className="text-xl font-bold text-gray-800  mb-4">
                 Course Curriculum
               </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <ul className="space-y-2 text-gray-600 ">
                 {course.curriculum?.map((item, idx) => (
-                  <li key={idx} className="flex items-center border-b border-gray-100 dark:border-gray-700 py-2 last:border-0">
+                  <li key={idx} className="flex items-center border-b border-gray-100 py-2 last:border-0">
                     <span className="text-blue-500 font-medium mr-3">{idx + 1}</span>
                     {item}
                   </li>
@@ -381,12 +377,12 @@ export default async function CourseDetailPage({
             </div>
 
             {/* Instructor */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8">
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-4">
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+              <h3 className="text-xl font-bold text-gray-800  mb-4">
                 👤 Instructor
               </h3>
               <div className="flex items-start space-x-4">
-                <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 bg-gray-200 dark:bg-gray-700">
+                <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 bg-gray-200">
                   {course.instructorAvatar ? (
                     <Image
                       src={course.instructorAvatar}
@@ -401,10 +397,10 @@ export default async function CourseDetailPage({
                   )}
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 dark:text-white">
+                  <p className="font-semibold text-gray-800 ">
                     {course.instructor}
                   </p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-sm text-gray-500 ">
                     {course.instructorBio || "Instructor bio coming soon."}
                   </p>
                 </div>
@@ -415,26 +411,26 @@ export default async function CourseDetailPage({
           {/* Right sidebar */}
           <div className="space-y-6">
             {/* Quick actions */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 top-6">
-              <h4 className="text-lg font-bold text-gray-800 dark:text-white mb-4">
+            <div className="bg-white  rounded-2xl shadow-lg p-6 top-6">
+              <h4 className="text-lg font-bold text-gray-800 mb-4">
                 Enroll Now
               </h4>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-gray-500 dark:text-gray-400">Price</span>
-                  <span className="font-semibold text-gray-800 dark:text-white">
+                  <span className="text-gray-500 ">Price</span>
+                  <span className="font-semibold text-gray-800 ">
                     {course.price || "Contact for details"}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-500 dark:text-gray-400">Language</span>
-                  <span className="font-semibold text-gray-800 dark:text-white">
+                  <span className="text-gray-500 ">Language</span>
+                  <span className="font-semibold text-gray-800">
                     {course.language || "English"}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-500 dark:text-gray-400">Schedule</span>
-                  <span className="font-semibold text-gray-800 dark:text-white">
+                  <span className="text-gray-500 ">Schedule</span>
+                  <span className="font-semibold text-gray-800 ">
                     {course.schedule || "Flexible"}
                   </span>
                 </div>
@@ -445,18 +441,18 @@ export default async function CourseDetailPage({
               >
                 Apply Now
               </Link>
-              <button className="mt-3 w-full block text-center bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 font-semibold py-2 rounded-lg transition duration-200">
+              <button className="mt-3 w-full block text-center bg-gray-100  hover:bg-gray-200  text-gray-700 font-semibold py-2 rounded-lg transition duration-200">
                  Save
               </button>
-              <button className="mt-2 w-full block text-center bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 font-semibold py-2 rounded-lg transition duration-200">
+              <button className="mt-2 w-full block text-center bg-gray-100  hover:bg-gray-200  text-gray-700  font-semibold py-2 rounded-lg transition duration-200">
                  Share
               </button>
             </div>
 
             {/* Related Courses */}
             {relatedCourses.length > 0 && (
-              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
-                <h4 className="text-lg font-bold text-gray-800 dark:text-white mb-4">
+              <div className="bg-white rounded-2xl shadow-lg p-6">
+                <h4 className="text-lg font-bold text-gray-800  mb-4">
                   Related Courses
                 </h4>
                 <ul className="space-y-4">
@@ -464,9 +460,9 @@ export default async function CourseDetailPage({
                     <li key={rel.id}>
                       <Link
                         href={`/courses/${rel.id}`}
-                        className="flex items-center space-x-3 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded-lg transition"
+                        className="flex items-center space-x-3 hover:bg-gray-50 p-2 rounded-lg transition"
                       >
-                        <div className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-gray-200 dark:bg-gray-700">
+                        <div className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-gray-200 ">
                           <Image
                             src={rel.image}
                             alt={rel.title}
@@ -476,10 +472,10 @@ export default async function CourseDetailPage({
                           />
                         </div>
                         <div>
-                          <p className="text-sm font-medium text-gray-800 dark:text-white">
+                          <p className="text-sm font-medium text-gray-800 ">
                             {rel.title}
                           </p>
-                          <p className="text-xs text-gray-500 dark:text-gray-400">
+                          <p className="text-xs text-gray-500 ">
                             {rel.duration}
                           </p>
                         </div>
