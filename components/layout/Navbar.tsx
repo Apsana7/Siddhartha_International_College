@@ -47,7 +47,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5" />
-              <span>Butwal-15, Dhawaha</span>
+              <span>Butwal-15, chauraha</span>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
       <div
         className={`flex items-center h-14 lg:h-20 transition-all duration-300 ${navBg}`}
       >
-        <div className="relative w-10/12 mx-auto">
+        <div className="relative w-11/12 mx-auto">
           <div className="flex items-center justify-between h-14 lg:h-20">
             <Link href="/" className="flex items-center shrink-0 space-x-3">
               <Image

@@ -71,7 +71,7 @@ export default function GalleryList() {
   
 
   return (
-    <section className="w-10/12 mx-auto py-16 px-4 bg-white">
+    <section className="w-11/12 mx-auto py-16 px-4 bg-white">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {galleryImages.map((item) => (
           <div

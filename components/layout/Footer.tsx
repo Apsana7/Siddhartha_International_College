@@ -8,10 +8,10 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="w-11/12 mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-3">BuildCo</h3>
+            <h3 className="text-2xl font-bold mb-3">Siddhartha International College</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Building excellence with quality, safety, and trust for over two decades.
             </p>

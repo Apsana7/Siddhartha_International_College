@@ -159,7 +159,7 @@ export default async function EventDetailPage({
         </div>
       </section>
 
-      <nav className="w-10/12 mx-auto py-4 px-4 text-sm text-gray-500 dark:text-gray-400">
+      <nav className="w-11/12 mx-auto py-4 px-4 text-sm text-gray-500 dark:text-gray-400">
       <div className="text-orange-500 underline underline-offset-2 mb-6 flex gap-2 items-center">
         <ArrowLeft className="h-4 w-4 "/>
         <Link href='/events'>Back to all events</Link>

@@ -114,7 +114,7 @@ export default function CourseList() {
     <>
       {/* Filter Bar */}
       <section className="mt-10 z-10 bg-white  shadow-sm">
-        <div className="w-10/12 mx-auto py-4 flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+        <div className="w-11/12 mx-auto py-4 flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
           <div className="flex flex-wrap gap-4 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
             {categories.map((cat) => (
               <button
