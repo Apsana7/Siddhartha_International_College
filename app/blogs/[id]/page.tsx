@@ -213,7 +213,7 @@ export default async function BlogDetailPage({
       </section>
 
       {/* Breadcrumb */}
-      <nav className="w-10/12 mx-auto py-4  text-sm text-gray-500 dark:text-gray-400">
+      <nav className="w-10/12 mx-auto py-4  text-sm text-gray-500 dark:text-gray-400 bg-white">
       <div className="mb-4">
         <Link href='/blogs' className="text-orange-600 underline underline-offset-2">Back to blogs</Link>
       </div>

@@ -45,7 +45,7 @@ const WhyChooseUs: React.FC = () => {
     ];
 
     return (
-        <section className="w-10/12 mx-auto py-16 px-4">
+        <section className="w-10/12 mx-auto py-16 px-4 bg-white">
 
             <div className="text-center mb-12">
                 <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 text-xs font-semibold px-4 py-1.5 rounded-full border border-orange-200/50 mb-3">

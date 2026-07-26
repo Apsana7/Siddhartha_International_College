@@ -107,7 +107,7 @@ export default function TeamList() {
         isLarge ? "h-auto" : "h-full"
       } flex flex-col`}
     >
-      <div className="p-6 pb-4 text-center">
+      <div className="p-6 pb-4 text-center bg-white">
         <div className="relative mb-4">
           <Image
             width={isLarge ? 160 : 96}

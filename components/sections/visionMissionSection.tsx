@@ -33,8 +33,8 @@ const coreData: CoreItem[] = [
 
 export function VisionMissionSection() {
   return (
-    <section className="py-16 md:py-24 ">
-      <div className="w-11/12 max-w-7xl mx-auto">
+    <section className="py-16 md:py-24 bg-white">
+      <div className="w-11/12 max-w-7xl mx-auto ">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 text-xs font-semibold px-3 py-1 rounded-full border border-orange-200/50 mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />

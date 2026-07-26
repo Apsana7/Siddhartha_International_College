@@ -290,7 +290,7 @@ export default async function CourseDetailPage({
       </section>
 
       {/* Breadcrumb */}
-      <nav className="w-10/12 mx-auto py-4  px-4 text-sm text-gray-500 dark:text-gray-400">
+      <nav className="w-10/12 mx-auto py-4  px-4 text-sm text-gray-500 dark:text-gray-400 bg-white">
        <div className="mb-6 flex gap-1 items-center">
         <ArrowLeft className="text-orange-600 w-4 h-4"/>
             <Link href="/courses" className="text-orange-600 text-sm underline underline-offset-2">Back to courses</Link>

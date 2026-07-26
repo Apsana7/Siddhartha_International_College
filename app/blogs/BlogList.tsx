@@ -121,7 +121,7 @@ export default function BlogList() {
 
   return (
     <>
-      <section className="sticky top-0 z-10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 shadow-sm">
+      <section className="sticky top-0 z-10 bg-white/80  backdrop-blur-md  shadow-sm">
         <div className="w-10/12 mx-auto py-4 flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
           <div className="flex flex-wrap gap-4 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
             {categories.map((cat) => (
