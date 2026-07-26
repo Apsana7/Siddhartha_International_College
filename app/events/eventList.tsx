@@ -104,7 +104,7 @@ export default function EventList() {
   return (
     <>
       <section className="sticky top-0 z-10 bg-white shadow-sm">
-        <div className="w-1/12 mx-auto py-4 flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+        <div className="w-11/12 mx-auto py-4 flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
           <div className="flex flex-wrap gap-2 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
             {categories.map((cat) => (
               <button
@@ -147,7 +147,7 @@ export default function EventList() {
       </section>
 
       {/* Events Grid – unique design */}
-      <section className="w-10/12 mx-auto py-12 px-4">
+      <section className="w-11/12 mx-auto py-12 px-4">
         {filteredEvents.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-gray-500  text-lg">

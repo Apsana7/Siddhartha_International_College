@@ -69,7 +69,7 @@ const initialValues: AdmissionFormValues = {
 
 const AdmissionForm: React.FC = () => {
   return (
-    <div className="w-11/12 mx-auto my-14 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+    <div className="w-10/12 mx-auto my-14 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
       <h1 className="text-2xl font-bold text-blue-900 mb-1"> College Admission Form</h1>
       <p className="text-sm text-gray-500 mb-6">All fields are required unless marked optional</p>
 

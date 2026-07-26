@@ -233,7 +233,7 @@ export default async function BlogDetailPage({
       </nav>
 
       {/* Main Content */}
-      <section className="w-10/12 mx-auto py-8 px-4">
+      <section className="w-11/12 mx-auto py-8 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             <article className="bg-white rounded-2xl shadow-lg p-6 md:p-8 prose prose-lg max-w-none">

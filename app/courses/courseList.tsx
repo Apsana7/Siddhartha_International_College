@@ -157,7 +157,7 @@ export default function CourseList() {
       </section>
 
       {/* Course Cards */}
-      <section className="w-10/12 mx-auto py-12 px-4">
+      <section className="w-11/12 mx-auto py-12 px-4">
         {filteredCourses.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-gray-500  text-lg">
