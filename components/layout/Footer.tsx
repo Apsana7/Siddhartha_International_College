@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image"; 
 import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -11,7 +12,13 @@ const Footer = () => {
       <div className="w-11/12 mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-3">Siddhartha International College</h3>
+            <Image
+              src="/slogo.png"
+              alt="Siddhartha International College Logo"
+              width={200}
+              height={60}
+              className="mb-3"
+            />
             <p className="text-gray-400 text-sm leading-relaxed">
               Building excellence with quality, safety, and trust for over two decades.
             </p>
@@ -30,10 +37,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/courses"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
-                  Our Services
+                  Our Courses
                 </Link>
               </li>
               <li>
@@ -60,36 +67,36 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/faq"
+                  href="/events"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
-                  FAQ
+                  Events
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/testimonials"
+                  href="/blogs"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
-                  Testimonials
+                  Blogs
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/blog"
+                  href="/gallery"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
-                  Blog
+                  Gallery
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/careers"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   Careers
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -113,20 +120,13 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            {/* <div className="mt-4">
-              <Link
-                href="/#quote"
-                className="inline-block border border-orange-500 text-orange-500 font-medium px-5 py-2 rounded-lg transition-colors duration-200 text-sm"
-              >
-                Request a Quote
-              </Link>
-            </div> */}
+           
           </div>
         </div>
       </div>
 
       <div className="border-t border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div className="w-11/12 mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
             <p className="text-gray-400 text-sm">
               &copy; {currentYear} BuildCo. All rights reserved.

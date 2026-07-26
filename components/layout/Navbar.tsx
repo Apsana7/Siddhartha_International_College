@@ -35,11 +35,12 @@ const Navbar = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-1.5">
               <Phone className="w-3.5 h-3.5" />
-              <span>9857071252, 9857070832</span>
+              <span>
+                985-7062883</span>
             </div>
             <div className="flex items-center gap-1.5">
               <Mail className="w-3.5 h-3.5" />
-              <span>info@siddharthcollege.edu.np</span>
+              <span>sic.butwal@gmail.com</span>
             </div>
             <div className="flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5" />
@@ -47,7 +48,8 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5" />
-              <span>Butwal-15, chauraha</span>
+              <span>
+                Kalikapath, Butwal, Nepal, 32900</span>
             </div>
           </div>
         </div>
@@ -67,7 +69,7 @@ const Navbar = () => {
                 className="object-contain"
                 alt="siddharth College"
               />
-             
+
             </Link>
 
             {/* Desktop Navigation */}
