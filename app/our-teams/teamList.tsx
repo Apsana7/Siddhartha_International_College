@@ -175,7 +175,7 @@ export default function TeamList() {
     <div className="min-h-screen bg-gray-50">
       {/* Filter Bar – like Courses page */}
       <section className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-gray-200  shadow-sm">
-        <div className="w-11/12 max-w-7xl mx-auto py-4 flex flex-wrap gap-2 items-center justify-center">
+        <div className="w-11/12 mx-auto py-4 flex flex-wrap gap-2 items-center justify-center">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -193,7 +193,7 @@ export default function TeamList() {
       </section>
 
       {/* Team Members Section */}
-      <div className="w-11/12 max-w-7xl mx-auto px-4 py-16">
+      <div className="w-11/12 mx-auto px-4 py-16">
         {/* Principal Section */}
         {principal.length > 0 && (
           <div className="mb-16">

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image"; 
+import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -105,22 +105,23 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-3 h-3 text-orange-500 shrink-0 mt-0.5" />
-                <span>123 Builder Ave, Suite 200, City, ST 12345</span>
+                <span>Kalikapath, Butwal, Nepal, 32900</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-3 h-3 text-orange-500 shrink-0" />
                 <a href="tel:+1234567890" className="hover:text-white transition-colors">
-                  (123) 456-7890
+
+                  985-7062883
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-3 h-3 text-orange-500 shrink-0" />
                 <a href="mailto:info@buildco.com" className="hover:text-white transition-colors">
-                  info@buildco.com
+                  sicbutwal.edu.np
                 </a>
               </li>
             </ul>
-           
+
           </div>
         </div>
       </div>
