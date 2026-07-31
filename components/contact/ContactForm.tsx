@@ -216,7 +216,7 @@ const ContactForm: React.FC = () => {
               <div>
                 <p className="text-sm font-semibold text-gray-700">Email</p>
                 <a
-                  href="mailto:info@buildco.com"
+                  href="sic.butwal@gmail.com"
                   className="text-sm text-gray-600 hover:text-orange-600 transition-colors"
                 >
                   sic.butwal@gmail.com

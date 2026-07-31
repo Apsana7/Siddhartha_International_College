@@ -3,7 +3,7 @@ import Image from "next/image";
 import TeamList from "./teamList";
 
 export const metadata: Metadata = {
-  title: "Our Team | BuildCo",
+  title: "Our Team | Siddhartha College",
   description:
     "Meet our dedicated principal and faculty members who drive excellence in education.",
 };

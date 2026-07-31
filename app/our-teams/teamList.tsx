@@ -192,7 +192,6 @@ export default function TeamList() {
         </div>
       </section>
 
-      {/* Team Members Section */}
       <div className="w-11/12 mx-auto px-4 py-16">
         {/* Principal Section */}
         {principal.length > 0 && (

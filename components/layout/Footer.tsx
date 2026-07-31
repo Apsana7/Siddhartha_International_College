@@ -116,7 +116,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-3 h-3 text-orange-500 shrink-0" />
-                <a href="mailto:info@buildco.com" className="hover:text-white transition-colors">
+                <a href="sicbutwal.edu.np" className="hover:text-white transition-colors">
                   sicbutwal.edu.np
                 </a>
               </li>
@@ -130,7 +130,7 @@ const Footer = () => {
         <div className="w-11/12 mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} BuildCo. All rights reserved.
+              &copy; {currentYear} Siddhartha College. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">

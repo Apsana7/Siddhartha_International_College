@@ -3,7 +3,7 @@ import Image from "next/image";
 import GalleryList from "./galleryList";
 
 export const metadata: Metadata = {
-  title: "Gallery | BuildCo",
+  title: "Gallery | Siddhartha College",
   description:
     "Explore our campus life, events, and facilities through a collection of memorable moments captured in photos.",
 };

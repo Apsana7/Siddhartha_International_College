@@ -80,9 +80,7 @@ const Navbar = () => {
               <Link href="/about" className={`font-normal transition-colors ${textColor}`}>
                 ABOUT
               </Link>
-              <Link href="/courses" className={`font-normal uppercase transition-colors ${textColor}`}>
-                COURSES
-              </Link>
+            
 
               {/* OUR TEAMS – now a direct link (no dropdown) */}
               <Link href="/our-teams" className={`font-normal transition-colors ${textColor}`}>
@@ -98,12 +96,16 @@ const Navbar = () => {
               <Link href="/events" className={`font-normal transition-colors ${textColor}`}>
                 EVENTS
               </Link>
+              <Link href="/courses" className={`font-normal transition-colors ${textColor}`}>
+               COURSES
+              </Link>
               <Link href="/admission" className={`font-normal transition-colors ${textColor}`}>
                 ADMISSION
               </Link>
               <Link href="/contact" className={`font-normal transition-colors ${textColor}`}>
                 CONTACT
               </Link>
+              
             </nav>
 
             <button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>

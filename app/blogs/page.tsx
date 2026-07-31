@@ -3,7 +3,7 @@ import Image from "next/image";
 import BlogList from "./BlogList";
 
 export const metadata: Metadata = {
-  title: "Blogs | BuildCo",
+  title: "Blogs | Siddhartha College",
   description:
     "Read insightful articles, industry trends, and stories from our community.",
 };

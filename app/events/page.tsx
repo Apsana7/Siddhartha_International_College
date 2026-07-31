@@ -3,7 +3,7 @@ import Image from "next/image";
 import EventList from "./eventList";
 
 export const metadata: Metadata = {
-  title: "Events | BuildCo",
+  title: "Events | Siddhartha College",
   description:
     "Stay updated with the latest events, workshops, and seminars at our college.",
 };

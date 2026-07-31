@@ -3,9 +3,9 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About Us | BuildCo",
+  title: "About Us | Siddhartha College",
   description:
-    "Learn about BuildCo – a family‑owned construction company with over 20 years of experience delivering quality projects.",
+    "Learn about Siddhartha College scholarship",
 };
 
 export default function ScholorshipPage() {
@@ -14,7 +14,7 @@ export default function ScholorshipPage() {
       <section className="relative h-[50vh] min-h-75 w-full overflow-hidden">
         <Image
           src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1260"
-          alt="About BuildCo"
+          alt="About siddhartha college"
           fill
           className="object-cover"
           priority

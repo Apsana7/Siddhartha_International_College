@@ -119,7 +119,7 @@ export async function generateMetadata({
     return { title: "Event Not Found" };
   }
   return {
-    title: `${event.title} | BuildCo`,
+    title: `${event.title} | Siddhartha College`,
     description: event.description,
   };
 }

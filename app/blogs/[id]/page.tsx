@@ -171,7 +171,7 @@ export async function generateMetadata({
     return { title: "Blog Not Found" };
   }
   return {
-    title: `${blog.title} | BuildCo`,
+    title: `${blog.title} | Siddhartha College`,
     description: blog.description,
   };
 }

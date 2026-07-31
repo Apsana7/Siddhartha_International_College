@@ -3,9 +3,9 @@ import Image from "next/image";
 import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | BuildCo",
+  title: "Contact Us | Siddhartha College",
   description:
-    "Get in touch with BuildCo – we're here to answer your questions and provide a free quote for your project.",
+    "Get in touch with Siddhartha College ",
 };
 
 export default function ContactPage() {
@@ -14,7 +14,7 @@ export default function ContactPage() {
       <section className="relative h-[70vh] min-h-75 w-full overflow-hidden">
         <Image
           src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1260"
-          alt="Contact BuildCo"
+          alt="Contact us"
           fill
           className="object-cover"
           priority
@@ -47,7 +47,7 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="BuildCo Location"
+              title="Siddhartha College Location"
               className="w-full"
     />
           </div>
